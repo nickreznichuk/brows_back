@@ -1,6 +1,6 @@
 class Api::V1::CustomerRecordsController < Api::BaseController
   def index
-
+    @records = CustomerRecord.all
   end
 
   def create
